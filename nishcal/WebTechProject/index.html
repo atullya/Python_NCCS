@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evento - Home</title>
+    <!-- Updated FontAwesome link -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Main Content -->
+    <main>
+      <section id="header">
+        <header>
+          <nav>
+            <ul>
+              <li><a href="#about-us">ABOUT</a></li>
+              <li>SERVICES</li>
+              <li>KIND WORDS</li>
+              <li><h1 class="evento-header">Evento</h1></li>
+              <li>GALLERY</li>
+              <li>REVIEWS</li>
+              <li>CONTACT</li>
+            </ul>
+          </nav>
+          <p>Making your events memorable and magical!</p>
+        </header>
+
+        <!-- Image Gallery Section -->
+        <section class="gallery">
+          <div class="gallery-container">
+            <img src="./Image/image1.png" alt="Event 1" />
+            <img src="./Image/image2.png" alt="Event 2" />
+            <img src="./Image/image3.png" alt="Event 3" />
+            <img src="./Image/image4.png" alt="Event 4" />
+            <img src="./Image/image5.png" alt="Event 5" />
+          </div>
+        </section>
+      </section>
+
+      <!-- About Us Section -->
+      <section class="about-us" id="about-us">
+        <div class="about-us-heading">
+          <i class="fas fa-star"></i>
+          <h2>About Us</h2>
+        </div>
+        <p>
+          Welcome to Evento, where we turn your visions into reality! Our team
+          specializes in creating unforgettable experiences tailored to your
+          unique preferences. From intimate gatherings to grand celebrations, we
+          are committed to bringing your dream events to life with meticulous
+          attention to detail and a personal touch.
+        </p>
+        <p>
+          With years of experience in event planning, decoration, and
+          management, Evento has established itself as a trusted name in making
+          moments magical. Let us help you create memories that last a lifetime!
+        </p>
+        <div class="about-us-divider"></div>
+      </section>
+
+      <!-- Our Services Section -->
+      <section class="our-services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+          <!-- Event Planning -->
+          <div class="service-item">
+            <h3>🎉 Event Planning</h3>
+            <p>
+              Full event planning, day-of coordination, and theme-based event
+              designs to make your celebration seamless.
+            </p>
+            <p><a href="#" class="show-more">Click here for more details</a></p>
+          </div>
+          <!-- Decor and Styling -->
+          <div class="service-item">
+            <h3>🌸 Decor and Styling</h3>
+            <p>
+              Custom decorations, backdrops, photo booths, table styling, and
+              elegant lighting to set the perfect ambiance.
+            </p>
+            <p><a href="#" class="show-more">Click here for more details</a></p>
+          </div>
+          <!-- Catering Services -->
+          <div class="service-item">
+            <h3>🍽 Catering and Culinary</h3>
+            <p>
+              Delicious food, live cooking stations, and dessert tables to
+              satisfy all your guests' cravings.
+            </p>
+            <p><a href="#" class="show-more">Click here for more details</a></p>
+          </div>
+          <!-- Entertainment Services -->
+          <div class="service-item">
+            <h3>🎭 Entertainment</h3>
+            <p>
+              Live performers, DJs, photo and videography, and interactive
+              activities for all ages.
+            </p>
+            <p><a href="#" class="show-more">Click here for more details</a></p>
+          </div>
+          <!-- Corporate Events -->
+          <div class="service-item">
+            <h3>💼 Corporate Events</h3>
+            <p>
+              Organize workshops, product launches, award ceremonies, and
+              corporate retreats tailored to your needs.
+            </p>
+            <p><a href="#" class="show-more">Click here for more details</a></p>
+          </div>
+          <!-- Special Occasions -->
+          <div class="service-item">
+            <h3>👰 Special Occasions</h3>
+            <p>
+              From weddings to baby showers, anniversaries, and milestone
+              celebrations, we handle it all!
+            </p>
+            <p>
+              <a
+                href="javascript:void(0);"
+                class="show-more"
+                id="special-occasions-link"
+                >Click here for more details</a
+              >
+            </p>
+          </div>
+          <!-- Luxury Add-Ons -->
+          <div class="service-item">
+            <h3>🎆 Luxury Add-Ons</h3>
+            <p>
+              Fireworks, drone shows, luxury transportation, and personalized
+              party favors to elevate your event.
+            </p>
+            <p><a href="#" class="show-more">Click here for more details</a></p>
+          </div>
+          <!-- Eco-Friendly Events -->
+          <div class="service-item">
+            <h3>🌿 Eco-Friendly Events</h3>
+            <p>
+              Make a difference with sustainable and green-themed event planning
+              options.
+            </p>
+            <p><a href="#" class="show-more">Click here for more details</a></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal for Special Occasions Extra Features -->
+      <div class="modal" id="special-occasions-modal" style="display: none">
+        <div class="modal-content">
+          <span class="close" id="modal-close">&times;</span>
+          <h2>Special Occasions Services</h2>
+          <div class="modal-grid">
+            <div class="modal-item">
+              <img src="mehendi.jpg" alt="Mehendi" />
+              <h3>💅 Mehendi</h3>
+              <p>
+                Beautiful henna art for brides and guests, offering traditional
+                and modern designs for all events.
+              </p>
+            </div>
+            <div class="modal-item">
+              <img src="haldi.jpg" alt="Haldi" />
+              <h3>🌼 Haldi Ceremony</h3>
+              <p>
+                Set up a colorful and joyful Haldi ceremony with traditional
+                décor and services for a memorable celebration.
+              </p>
+            </div>
+            <div class="modal-item">
+              <img src="invitations.jpg" alt="Custom Invitations" />
+              <h3>📜 Custom Invitations</h3>
+              <p>
+                Design personalized, creative invitations that reflect the theme
+                of your special occasion.
+              </p>
+            </div>
+            <div class="modal-item">
+              <img src="venue.jpg" alt="Venue Booking" />
+              <h3>🏰 Venue Booking</h3>
+              <p>
+                Help with booking the perfect venue for your special occasion,
+                whether it's a grand hall or an intimate setting.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
