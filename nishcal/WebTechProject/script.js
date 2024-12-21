@@ -1,8 +1,4 @@
-// script.js
-
 document.addEventListener("DOMContentLoaded", function () {
-    const sidebar = document.getElementById("sidebar");
-    const sidebarToggle = document.getElementById("sidebar-toggle");
     const modal = document.getElementById("special-occasions-modal");
     const modalClose = document.getElementById("modal-close");
     const specialOccasionsLink = document.getElementById("special-occasions-link");
@@ -47,4 +43,37 @@ window.addEventListener("click", (event) => {
     }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const reviews = document.querySelectorAll(".review");
+    const prevButton = document.getElementById("prev-review");
+    const nextButton = document.getElementById("next-review");
+  
+    let currentReviewIndex = 0;
+  
+    // Function to update the review slider
+    function updateReviewSlider() {
+      const offset = currentReviewIndex * -100;
+      reviews.forEach((review) => {
+        review.style.transform = `translateX(${offset}%)`;
+      });
+    }
+  
+    // Event listener for previous button
+    prevButton.addEventListener("click", () => {
+      currentReviewIndex =
+        (currentReviewIndex - 1 + reviews.length) % reviews.length;
+      updateReviewSlider();
+    });
+  
+    // Event listener for next button
+    nextButton.addEventListener("click", () => {
+      currentReviewIndex = (currentReviewIndex + 1) % reviews.length;
+      updateReviewSlider();
+    });
+  });
+  
 
+    document.querySelector('.go-to-top').addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector('#header').scrollIntoView({ behavior: 'smooth' });
+    });

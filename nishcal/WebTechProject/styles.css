@@ -364,3 +364,216 @@ header p {
     color: #555;
     text-align: justify; /* Justify text alignment */
 }
+
+/* Reviews Section */
+.reviews {
+    padding: 40px 20px;
+    background-color: #f5f5dc;
+    text-align: center;
+  }
+  
+  .reviews h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #293040;
+    font-family: 'Pinyon Script', cursive;
+  }
+  
+  .review-slider {
+    display: flex;
+    overflow: hidden;
+    max-width: 600px;
+    margin: 0 auto 20px;
+    position: relative;
+  }
+  
+  .review {
+    flex: 0 0 100%;
+    transition: transform 0.5s ease;
+    text-align: center;
+  }
+  
+  .review-text {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  .review-author {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .review-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .review-button {
+    background-color: #293040;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .review-button:hover {
+    background-color: #ffc107;
+  }
+  
+  /* Contact Us Section Styles */
+/* Contact Us Section Styles */
+#contact-us {
+    padding: 40px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 50px auto;
+  }
+  
+  #contact-us h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  #contact-us form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #contact-us input,
+  #contact-us textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  #contact-us textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  #contact-us button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #contact-us button:hover {
+    background-color: #0056b3;
+  }
+  
+
+  #contact-us #package-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+    gap: 15px 40px; /* Row gap: 15px, Column gap: 40px */
+    margin-top: 10px;
+  }
+  
+  #contact-us .checkbox-group {
+    width: 170px;
+    /* border:1px solid black; */
+    display: flex;
+    align-items: center;
+ 
+  }
+  
+  #contact-us .checkbox-group input[type="checkbox"] {
+    margin: 0;
+    width: 22px;
+    height: 22px;
+  margin-right: 10px; 
+    vertical-align: middle; 
+  }
+  #details,#det{
+    margin-top: 20px;
+  }
+  #contact-us label {
+    font-size: 14px;
+    line-height: 1.4; /* Adjust line height for better alignment */
+  }
+  
+/* Socials Section Styling */
+section#socials {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Default white text color */
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  section#socials h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #ffcc00; /* Highlight color for the header */
+  }
+  
+  section#socials .social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Space between links */
+  }
+  
+  section#socials .social-links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff; /* White text for the links */
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  section#socials .social-links a:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+  }
+  
+  /* Individual Icon Colors */
+  section#socials .social-links a .fab.fa-instagram {
+    color: #E1306C; /* Instagram's pink gradient */
+  }
+  
+  section#socials .social-links a .fab.fa-facebook {
+    color: #1877F2; /* Facebook's blue */
+  }
+  
+  section#socials .social-links a .fas.fa-envelope {
+    color: #D44638; /* Gmail's red */
+  }
+  
+  section#socials .social-links a .fas.fa-phone {
+    color: #25D366; /* WhatsApp-like green */
+  }
+  
+
+  .go-to-top {
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 20px; /* Icon size */
+    color: #bd0404; /* Light red */
+    vertical-align: right; /* Align with text */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.go-to-top:hover {
+    color: #da3c3c; /* Slightly lighter red on hover */
+    transform: scale(1.2); /* Slight zoom effect */
+}
+

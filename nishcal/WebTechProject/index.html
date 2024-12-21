@@ -27,7 +27,7 @@
               <li>KIND WORDS</li>
               <li><h1 class="evento-header">Evento</h1></li>
               <li>GALLERY</li>
-              <li>REVIEWS</li>
+              <li><a href="#reviews">REVIEWS</a></li>
               <li>CONTACT</li>
             </ul>
           </nav>
@@ -194,7 +194,134 @@
           </div>
         </div>
       </div>
+          <!-- Reviews Section -->
+<!-- Reviews Section -->
+<section class="reviews" id="reviews">
+  <h2>What Our Clients Say</h2>
+  <div class="review-slider">
+    <div class="review">
+      <p class="review-text">"Evento made our wedding truly magical! 
+          The attention to detail and personalized touches were beyond our expectations. 
+          Highly recommend!"</p>
+      <p class="review-author">- Kunwar Family</p>
+    </div>
+    <div class="review">
+      <p class="review-text">"The team at Evento did an incredible job for our corporate retreat. 
+          Everything was seamless and professional. Thank you!"</p>
+      <p class="review-author">- Pandey Pariwar</p>
+    </div>
+    <div class="review">
+      <p class="review-text">"Our daughter's birthday party was a huge hit, all thanks to Evento! 
+          The kids loved the theme and activities. Great job!"</p>
+      <p class="review-author">- The Upadhyays</p>
+    </div>
+  </div>
+  <div class="review-buttons">
+    <button id="prev-review" class="review-button">❮</button>
+    <button id="next-review" class="review-button">❯</button>
+  </div>
+</section>
+    
+<!-- Contact Us Section -->
+<section id="contact-us">
+  <h2>Contact Us</h2>
+  <form action="/submit" method="post">
+    <label for="full-name">Full Name</label>
+    <input type="text" id="full-name" name="full-name" required />
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" required />
+
+    <label for="event-date">Event Date</label>
+    <input type="date" id="event-date" name="event-date" required />
+
+    <label for="event-time">Event Time</label>
+    <input type="time" id="event-time" name="event-time" required />
+
+    <label for="event-location">Event Location</label>
+    <input type="text" id="event-location" name="event-location" required />
+
+    <label for="caterer">Who is your caterer if decided? (Optional)</label>
+    <input type="text" id="caterer" name="caterer" />
+
+    <label for="guests">How many guests are you anticipating?</label>
+    <input type="number" id="guests" name="guests" required />
+
+    <label for="package">Package Interested In? (Select all that apply)</label>
+    <div id="package-options">
+      <div class="checkbox-group">
+        <input type="checkbox" id="event-planning" name="package[]" value="Event Planning">
+        <label for="event-planning">Event Planning</label>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="decor-styling" name="package[]" value="Decor and Styling">
+        <label for="decor-styling">Decor and Styling</label>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="catering-culinary" name="package[]" value="Catering and Culinary">
+        <label for="catering-culinary">Catering and Culinary</label>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="entertainment" name="package[]" value="Entertainment">
+        <label for="entertainment">Entertainment</label>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="corporate-events" name="package[]" value="Corporate Events">
+        <label for="corporate-events">Corporate Events</label>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="special-occasions" name="package[]" value="Special Occasions">
+        <label for="special-occasions">Special Occasions</label>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="luxury-addons" name="package[]" value="Luxury Add-Ons">
+        <label for="luxury-addons">Luxury Add-Ons</label>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="eco-friendly-events" name="package[]" value="Eco-Friendly Events">
+        <label for="eco-friendly-events">Eco-Friendly Events</label>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="unsure" name="package[]" value="Unsure, Let's Chat">
+        <label for="unsure">Unsure, Let's Chat</label>
+      </div>
+    </div>
+    
+    </div>
+
+    <label for="details" id="det">More Details (Optional)</label>
+    <textarea id="details" name="details"></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<section id="socials">
+  <h2>Connect With Us</h2>
+  <div class="social-links">
+    <a href="https://www.instagram.com/yourprofile" target="_blank">
+      <i class="fab fa-instagram"></i> _evento
+    </a>
+    <a href="https://www.facebook.com/yourpage" target="_blank">
+      <i class="fab fa-facebook"></i> Evento
+    </a>
+    <a href="mailto:youremail@example.com">
+      <i class="fas fa-envelope"></i> Email: evento@gmail.com
+    </a>
+    <a href="tel:+1234567890">
+      <i class="fas fa-phone"></i> Phone: +977-9863225429
+    </a>
+    <a href="#home">
+      <i class="go-to-top">&#x25B2</i>
+  </a>
+  </div>
+</section>
     </main>
+
+    
 
     <script src="script.js"></script>
   </body>
