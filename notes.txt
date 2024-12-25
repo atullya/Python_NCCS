@@ -1,0 +1,134 @@
+linear equation workflow
+
+y=2x-1
+yo eqn x ko value profide garyo bhanne y ko value aauxa
+
+
+ in traditional programming
+ def function(x):
+     return 2*x-1
+
+     funct(5)->9
+
+in machine learning we generate or approximate eqn like 2*x-1
+
+    suppose we approximate 1.997x-0.9965
+    1.997*5-0.9965 we get ->8.9885
+
+    but the real value is 9 from the eqn but the approximate value is 8.9885 in machine learning jaile ni approximate gardaina
+
+    y=2x-1
+    x   y
+    1   1
+    2   3
+    3   5
+    4   7
+    5   9
+
+    suppose we don't know the eqn i.e y=2x-1
+
+    now we would find the eqn from the table
+    tyo nikalna ko lai hamiley lineary eqn ko use garxam
+
+    in case of ML we have algo and data
+
+    we repeadetly feeed the data i.e table ko data in algoritin and eqn approximate garxam..
+
+    aba hami algorithm ko barey discuss garxam..
+
+    In ML algo hami ley entire data lai ML algo ma feed garxam 
+    ML algo bhitra learning Rate nikalxam yesko highest value ->0.001/0.01
+    Learning Rate-> entire data ml algo bhitra pass garda kati info grab gareny..
+
+    Ml algo bhitra parameter hunxa teslai ML term ma HyperParameter bhanxam..
+    Linear eqn ma hyperparameter dheri hudaina complexity aanusar bardai janxa..
+
+    aaba y=2x-1 eqn nikalna ko lagi..
+     we initialized y=wx+b   
+     tyo agi ko data lai plot garyo bhanne
+     |
+     |
+     |       /
+     |      /
+     |     /
+     |    /  
+     |   /   
+     |  /
+     |/
+     ----------------------------------
+    sth yesto graph aauxa 
+
+    tara harmo data kaile ni yesto hudaina
+        |
+     |      .....
+     |    ....
+     |       .... . 
+     |    . . 
+     |    .. . 
+     |  . . .
+     |  . . .
+     |. .. 
+     ----------------------------------
+    now we determinse such line that it is perpedicular to ever point
+
+    ani tyo perpedicular line lai chai error bhanxam i.e we identified line using algorithm
+
+    hami sanga x ra y ko value x
+    y=wx+b
+     where b->bias i.e line kati samma tada jana sakxa bhanney determain garxam
+
+     y and x we have given from table
+
+     w and b we initialize randomly..
+     aba ML algo bhita tyo entire data  y=wx+b eqn ma feed garxam ra loss (mean ) nikalxam ra 
+     gradient calculate garxam..
+     gradient->yo data ko information (aaile ko lagi yo bhayera bhujda hunxa)
+      gradient use garera data projection kasto xa ta bhnaere tune garxa
+      kasari
+      
+       hunxa bhnne eg w=w-alpha*gradient
+                            b=b-alpha*gradient
+      where alpha=> Learning Rate
+
+      suppose we update 5 times we might not get original eqn 
+      and when we update 100 time we might get it 
+      agi  1.997*5-0.9965 we get ->8.9885 
+      edi haro eqn yesto ( 1.997*5-0.9965 ) pugyo bhanney we are good to good
+      tara edi hamro eqn yesto ( 1.65*5-1.1 ) pugyo bhanney we need to update more
+
+      Training data use garera we generate ( 1.997*5-0.9965 )  esto eqn
+
+      suppose x=7 and y=12.5 but original data is 13 the approximation is coorect
+
+      x=7 y=14 predicted value=12.5
+
+
+      13-12.5=0.5
+      15-15.3=-0.3
+
+      we calculate mean ie. 0.2/2=0.1
+      ie. Mean Square value=0.1 harm value 0 tira bhayo bhnne approximation chai right xa..
+
+                                n
+      L(loss function)=MSE=1/n summation (yi(cap)-yi)^2
+                                 i=1
+
+                    y(cap)=wx+b (we try to find out this eqn)
+
+                                  n
+      L(loss function)=MSE=1/n summation (wx+b-yi)^2
+                                 i=1                                n
+                    partialDerivate(L)      partialDerivate (1/n  summation (wx+b-yi)^2 )
+                    ------------------ =   -----------------         1
+                    partialDerivate(b)       partialDerivate(b)
+
+                ... after solving we get
+                        n
+                2    summation (y(cap)-y,)
+                ---     i=i
+                n
+                (partialDerivate kina gareko bhanne to update bias i.e data bata chai kati information nikalney bhnnera calculate garney bhanera )
+                loss=y(cap) -y  
+                y(cap) bhanneko aaile generate garney value   y (actual vlaue)
+
+
